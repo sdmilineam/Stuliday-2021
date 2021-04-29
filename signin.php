@@ -1,32 +1,41 @@
 <?php require 'inc/header.php'; ?>
 <section class="body">
-
-            <div class="columns is-multiline">
-                    <div class="column is-8 is-offset-2 register">
-                        <div class="columns">
-                            <div class="column">
-                                <h1 class="title is-1">Super Cool Website</h1>
-                                <h2 class="subtitle colored is-4">Lorem ipsum dolor sit amet.</h2>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ex deleniti aliquam tempora libero excepturi vero soluta odio optio sed.</p>
-                            </div>
-                            <div class="column  has-text-centered">
-                                <h1 class="title is-4">Sign up today</h1>
+            <div class="form-signe">
+                    <div class="is-8 is-offset-2 register">
+                        <div class="signbloc">
+                            <div class="has-text-centered">
+                                <img class="img"src="assets/image/home panda.png" width="150px"/>
+                                <h1 class="title is-4">Inscrivez-vous</h1>
                                 <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
                                 <form>
                                     <div class="field">
+                                    <div class="control">    
+                                        <input class="input-sign" type="email" placeholder="Email" id="InputEmail1" aria-describedby="emailHelp" name="email_login" required>
+                                    </div>
+                                    </div>
+                                    <div class="field">
                                     <div class="control">
-                                        <input class="input is-medium" type="text" placeholder="Name">
+                                        <input class="input-sign" type="usersname" placeholder="Nom d'utilisateur">
+                                    </div>
+                                    </div>
+                                    <div class="field">
+                                    <div class="control">
+                                        <input class="input-sign" type="password" placeholder="Password" name="password1_signup" required>
                                     </div>
                                     </div>
 
                                     <div class="field">
                                     <div class="control">
-                                        <input class="input is-medium" type="email" placeholder="Email">
+                                        <input class="input-sign" type="password" placeholder="Entrez votre mot de passe de nouveau" name="password2_signup" required>
                                     </div>
                                     </div>
-                                    <button class="button is-block is-primary is-fullwidth is-medium">Submit</button>
-                                    <br />
-                                    <small><em>Lorem ipsum dolor sit amet consectetur.</em></small>
+                                    <div class="tre"></div>
+                                    <input type="checkbox" class="form-check-input" id="Check1" required>
+                                    <label class="form-check-label" for="Check1">Accepter les <a href="#">termes et conditions</a></label>
+                                    <div class="tre"></div>
+                                    <button class="button is-link is-fullwidth is-rounded">S'inscrire</button>
+                                    <div class="tre"></div>
+                                    <p>Déja inscrits ? <a href="login.php">Connectez-vous ici </a></p>
                                 </form>
                             </div>
                         </div>

@@ -45,7 +45,7 @@
             <div class="navbar-end">
                 <div class="navbar-item">
                         <div class="buttons">
-                            <a  class="button is-primary" href="login.php">
+                            <a  class="button is-link" href="login.php">
                             <strong>S'inscrire</strong>
                             </a>
                             <a class="button is-light" href="signin.php">
