@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+header{
+  background-color: rgb(22, 222, 157);
+}
+.navbar-item{
+  margin-left: 50px;
+}
+.img-ac{
+  background:cover;
+  
+}
+.slider{
+  width: 100%;
+  height: 50vh;
+  background-color: rgb(91, 94, 93);
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
