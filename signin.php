@@ -1,21 +1,50 @@
 <?php require 'inc/header.php'; ?>
 <?php 
     
-    if(!empty($_POST['$email_signup']) && !empty($_POST['username_signup']) && !empty($_POST['password1_signup']) && !empty($_POST['password2_signup']) && isset($_POST['submit_signup'])){
-        
-        $email = htmlspecialchars(['email_signup']);
-        $username = htmlspecialchars(['username_signup']);
-        $password1 = htmlspecialchars(['password1_signup']);
-        $password2 = htmlspecialchars(['password2_signup']);
+    $email = $_POST['email_signup'];
+    $username =  $_POST['username_signup'];
+    $password1 = $_POST['password1_signup'];
+    $password2 =  $_POST['password2_signup'];
 
-        try{
-             
-            if (filer_var($email, FILTER_VALIDATE_EMAIL)){
-                $sqlMail="SELECT * users WHERE email = '{$email}' ";
+    try{
+                if (filer_var($email, FILTER_VALIDATE_EMAIL)){
+                    echo "Etape 1 : Email ok <br>";
+                    $sqlMail="SELECT * users WHERE email = '{$email}'";
+                    $resultmail = $connect->query($sqlMail);
+                    $countMail = $resultmail ->fetchColumn();
+                    var_dump($coutMAil)
+                }
+            }catch (PDOException $error) { 
+                echo 'Error' . $error->getMessage();
             }
-        }
 
-    }
+
+
+
+
+    // if(!empty($_POST['$email_signup']) && !empty($_POST['username_signup']) && !empty($_POST['password1_signup']) && !empty($_POST['password2_signup']) && isset($_POST['submit_signup'])){
+        
+    //     $email = htmlspecialchars(['email_signup']);
+    //     $username = htmlspecialchars(['username_signup']);
+    //     $password1 = htmlspecialchars(['password1_signup']);
+    //     $password2 = htmlspecialchars(['password2_signup']);
+
+    //     try{
+    //         if (filer_var($email, FILTER_VALIDATE_EMAIL)){
+    //             echo "Etape 1 : Email ok <br>";
+    //             $sqlMail="SELECT * users WHERE email = '{$email}' ";
+    //             $resultmail = $connect->query($sqlMail);
+    //             $countMail = $resultmail ->fetchColumn();
+                
+
+                
+
+    //         }
+    //     }catch (PDOException $error) {
+    //         echo 'Error' . $error->getMessage();
+    //     }
+
+    // }
  
 
 ?>
