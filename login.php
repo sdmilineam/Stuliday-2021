@@ -3,18 +3,18 @@
     <p></p>
 </section>
 <section class="login">
-      <div class="hero-body has-text-centered">
+<div class="hero-body has-text-centered">
         <div class="login">
           <img class="imge" src="assets/image/home panda.png" width="205px" />
           <form>
             <div class="field">
               <div class="control">
-                <input class="input is-medium is-rounded" class="bgn" type="email" placeholder="bonjour@example.com" autocomplete="username" required />
+                <input class="input is-medium is-rounded" class="bgn" type="email" placeholder="bonjour@example.com"  name="email_login" required />
               </div>
             </div>
             <div class="field">
               <div class="control">
-                <input class="input is-medium is-rounded" class="bgn" type="password" placeholder="**********" autocomplete="current-password" required />
+                <input class="input is-medium is-rounded" class="bgn" type="password" placeholder="**********"  name="password_login" required />
               </div>
             </div>
             <br />
@@ -36,4 +36,3 @@
     </section>
   </body>
 
-</html>

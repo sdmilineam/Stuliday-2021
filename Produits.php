@@ -1,4 +1,3 @@
-<?php require 'inc/config.php'; ?>
 <?php require 'inc/header.php'; ?>
 <!DOCTYPE html>
     <section class="slider">

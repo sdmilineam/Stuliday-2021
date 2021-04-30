@@ -1,7 +1,24 @@
 <?php require 'inc/header.php'; ?>
-<?php var_dump($_POST) ?>
+<?php 
+    
+    if(!empty($_POST['$email_signup']) && !empty($_POST['username_signup']) && !empty($_POST['password1_signup']) && !empty($_POST['password2_signup']) && isset($_POST['submit_signup'])){
+        
+        $email = htmlspecialchars(['email_signup']);
+        $username = htmlspecialchars(['username_signup']);
+        $password1 = htmlspecialchars(['password1_signup']);
+        $password2 = htmlspecialchars(['password2_signup']);
 
+        try{
+             
+            if (filer_var($email, FILTER_VALIDATE_EMAIL)){
+                $sqlMail="SELECT * users WHERE email = '{$email}' ";
+            }
+        }
 
+    }
+ 
+
+?>
 
 <section class="body">
             <div class="form-signe">
@@ -11,15 +28,15 @@
                                 <img class="img"src="assets/image/home panda.png" width="150px"/>
                                 <h1 class="title is-4">Inscrivez-vous</h1>
                                 <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
-                                <form>
+                                <form action="#">
                                     <div class="field">
                                     <div class="control">    
-                                        <input class="input-sign" type="email" placeholder="Email" id="InputEmail1" aria-describedby="emailHelp" name="email_signin" required>
+                                        <input class="input-sign" type="email" placeholder="Email" id="InputEmail1" aria-describedby="emailHelp" name="email_signup" required>
                                     </div>
                                     </div>
                                     <div class="field">
                                     <div class="control">
-                                        <input class="input-sign" type="usersname" placeholder="Nom d'utilisateur">
+                                        <input class="input-sign" type="usersname" placeholder="Nom d'utilisateur" name="username_signup">
                                     </div>
                                     </div>
                                     <div class="field">
@@ -37,7 +54,7 @@
                                     <input type="checkbox" class="form-check-input" id="Check1" required>
                                     <label class="form-check-label" for="Check1">Accepter les <a href="#">termes et conditions</a></label>
                                     <div class="tre"></div>
-                                    <button class="button is-link is-fullwidth is-rounded">S'inscrire</button>
+                                    <button class="button is-link is-fullwidth is-rounded" name="submit_signup">S'inscrire</button>
                                     <div class="tre"></div>
                                     <p>Déja inscrits ? <a href="login.php">Connectez-vous ici </a></p>
                                 </form>
