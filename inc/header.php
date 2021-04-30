@@ -28,13 +28,13 @@
           
             <div id="navbarBasicExample" class="navbar-menu">
               <div class="navbar-start">
-                <a class="navbar-item">
+                <a class="navbar-item" href="index.php">
                     Accueil
                 </a>
                 <a class="navbar-item" href="Produits.php">
                     Produits
                 </a>
-                <a class="navbar-item">
+                <a class="navbar-item" href="profile.php">
                     Profil
                 </a>
                 <a class="navbar-item">
@@ -45,10 +45,10 @@
             <div class="navbar-end">
                 <div class="navbar-item">
                         <div class="buttons">
-                            <a  class="button is-link" href="login.php">
+                            <a  class="button is-link" href="signin.php">
                             <strong>S'inscrire</strong>
                             </a>
-                            <a class="button is-light" href="signin.php">
+                            <a class="button is-light" href="login.php">
                                 Connexion
                             </a>
                         </div>

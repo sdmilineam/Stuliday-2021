@@ -1,4 +1,8 @@
 <?php require 'inc/header.php'; ?>
+<?php var_dump($_POST) ?>
+
+
+
 <section class="body">
             <div class="form-signe">
                     <div class="is-8 is-offset-2 register">
@@ -10,7 +14,7 @@
                                 <form>
                                     <div class="field">
                                     <div class="control">    
-                                        <input class="input-sign" type="email" placeholder="Email" id="InputEmail1" aria-describedby="emailHelp" name="email_login" required>
+                                        <input class="input-sign" type="email" placeholder="Email" id="InputEmail1" aria-describedby="emailHelp" name="email_signin" required>
                                     </div>
                                     </div>
                                     <div class="field">
