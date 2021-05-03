@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-    <link rel="stylesheet" href="Produits.html">
+    
     <title>Panda E-Bussine</title>
 </head>
 <body>
@@ -32,7 +32,7 @@
                     Accueil
                 </a>
                 <a class="navbar-item" href="Produits.php">
-                    Produits
+                    Annonces
                 </a>
                 <a class="navbar-item" href="profile.php">
                     Profil
@@ -48,9 +48,18 @@
                             <a  class="button is-link" href="signin.php">
                             <strong>S'inscrire</strong>
                             </a>
-                            <a class="button is-light" href="login.php">
-                                Connexion
-                            </a>
+                            <?php
+                                if (empty($_SESSION)) {
+                                ?>
+                                    <a class="button is-link" href="login.php">Se connecter</a>
+                                <?php
+                                } else {
+                                ?>
+                                    <a class="nav-link" href="profile.php"></a>
+                                    <a class="button is-link" href="?logout">Se déconnecter</a>
+                                <?php
+                                }
+                                ?>
                         </div>
                 </div>
             </div>
