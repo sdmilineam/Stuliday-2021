@@ -24,106 +24,226 @@
   background-color: red;
 }
  
-    .body {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .form-signe{
-      width: 50%;
-      height: 70%;
-    }
-    .input-sign{
-      width: 100%;
-      height: 5vh;
-      border-radius:50px ;
-      margin-bottom: 10px;
-    }
-    .description{
-      margin-bottom: 15px;
-    }
-    input {
-      font-size: 1rem;
-      padding: 20px;
-      
-    }
+.body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-signe{
+  width: 50%;
+  height: 70%;
+}
+.input-sign{
+  width: 100%;
+  height: 5vh;
+  border-radius:50px ;
+  margin-bottom: 10px;
+}
+.description{
+  margin-bottom: 15px;
+}
+input {
+  font-size: 1rem;
+  padding: 20px;
+  
+}
 
-    input:focus {
-      border-color: var(--brandColor) !important;
-      box-shadow: 0 0 0 1px var(--brandColor) !important;
-    }
-    
-    .tre{
-      width: 100%;
-      height: 1px;
-      background-color: black;
-      margin-top: 10px;
-      border-radius: 50px;
-      margin-bottom: 10px;
-    }
-    .img{
-      margin-bottom: 10px;
-    }
-    .profile{
-      width: 100%;
-      height: 100vh;
-      background-color:rgb(91, 94, 93);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .child-profil{
-      width: 70%;
-      height: 80vh;
-      border: 1px solid black;
-      background-color: whitesmoke;
+input:focus {
+  border-color: var(--brandColor) !important;
+  box-shadow: 0 0 0 1px var(--brandColor) !important;
+}
 
-    }
-    .shop-profil{
-      width: 100%;
-      height: 40vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      
-    }
-    .text{
-      width: 50%;
-      height: 50%;
-    }
-    .titre{
-      font-size: 4em;
-      color: black;
-      
-    }
-    .p{
-      font-size: 1.5em;
-      color: black;
-    }
-    .img-profil{
-      width: 50%;
-      height: 40vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .img-profil img{
-      width: 70%;
-      height: 70%;
-      border: 1px solid rgb(25, 59, 172);
-      
-    }
-    .buton{
-      width: 100%;
-      height: 40vh;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: flex-start;
-    }
-    .button{
-      width: 40%;
-      margin: 15px;
-    }
-    
+.tre{
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  margin-top: 10px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+.img{
+  margin-bottom: 10px;
+}
+.profile{
+  width: 100%;
+  height: 100vh;
+  background-color:rgb(91, 94, 93);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child-profil{
+  width: 70%;
+  height: 80vh;
+  border: 1px solid black;
+  background-color: whitesmoke;
+
+}
+.shop-profil{
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.text{
+  width: 50%;
+  height: 50%;
+}
+.titre{
+  font-size: 4em;
+  color: black;
+  
+}
+.p{
+  font-size: 1.5em;
+  color: black;
+}
+.img-profil{
+  width: 50%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-profil img{
+  width: 70%;
+  height: 70%;
+  border: 1px solid rgb(25, 59, 172);
+  
+}
+.buton{
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.button{
+  width: 40%;
+  margin: 15px;
+}
+#Anno{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blocprofil{
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.lead{
+  font-size: 2em;
+}
+.bt{
+  font-style: 1em;
+  color: white;
+}
+#addproduits{
+  width: 100%;
+  height: 80vh;
+  background-color:rgb(28, 60, 129);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blocadd{
+  width: 60%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: white;
+  border: 1px solid black;
+  
+}
+.form{
+  width: 70%;
+  height: 50%;
+  margin-top: 5vh;
+}
+.subjet{
+  width: 100%;
+
+}
+.engri{
+  margin-top:-10px ;
+}
+#afiche{
+  width: 100%;
+  height: 60vh;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.ss-afiche{
+  width: 60%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.mg{
+  width: 500px;
+  height: 300px;
+  border: 1px solid black;
+}
+.blo{
+  width: 100%;
+  height: 50%;
+
+}
+.blo1{
+  width: 100%;
+  height: 50%;
+
+}
+.affiche{
+  margin-top: 10px;
+}
+p{
+  margin-bottom: 10px;
+}
+.lattre{
+  margin-bottom: 10px;
+}
+.decr{
+  width: 60%;
+  height: 30vh;
+  margin-top: 10px;
+  border: 1px solid black;
+  padding: 10px;
+}
+.admin{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pgadmin{
+  width: 100%;
+  height: 30vh;
+  background-color: rgb(91, 94, 93);
+  margin-top: 2vh;
+}
+.pageadmin{
+  width: 100%;
+  height: 30vh;
+  margin-top: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
