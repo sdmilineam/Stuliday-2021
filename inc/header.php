@@ -1,4 +1,4 @@
-<?php require 'inc/config.php'; ?>
+<?php require 'inc/config.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +31,7 @@
                 <a class="navbar-item" href="index.php">
                     Accueil
                 </a>
-                <a class="navbar-item" href="Produits.php">
+                <a class="navbar-item" href="Annoce.php">
                     Annonces
                 </a>
                 <a class="navbar-item" href="profile.php">
@@ -49,7 +49,7 @@
                             <strong>S'inscrire</strong>
                             </a>
                             <?php
-                                if (empty($_SESSION)) {
+                                if (empty($_SESSION['id'])) {
                                 ?>
                                     <a class="button is-link" href="login.php">Se connecter</a>
                                 <?php

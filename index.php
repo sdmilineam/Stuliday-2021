@@ -1,8 +1,10 @@
-<?php require 'inc/config.php'; ?>
-<?php require 'inc/header.php'; ?>
+<?php require 'inc/header.php'?>
 
-    <section class="hero">
-        <img class="img-ac" src="/assets/image/living-room-1835923_1920.jpg">
+    <section class="container">
+        <article class="idex">
+        <h2 class="titre">Bienvenue</h2>
+        <p>Vous voule trouve une logement ?</p>
+        <p>inscrive vous pour plus info <a href="signin.php">ici</a></p>
+            
+        </article>
     </section>
-</body>
-</html>

@@ -1,8 +1,8 @@
-<?php require 'inc/header.php'; ?>
+<?php require 'inc/header.php' ?>
 <?php   
 
     
-if (!empty($_SESSION)) {
+if (!empty($_SESSION['id'])) {
     $user_id = $_SESSION['id'];
     $sqlUser = "SELECT * FROM users WHERE id = '{$user_id}'";
     $resultUser = $connect->query($sqlUser);
@@ -18,15 +18,19 @@ if (!empty($_SESSION)) {
                             <h2 class="titre">Bienvenue <?php echo $user['username']; ?></h2>
                             <p class="p">Vous possédez le <?php echo $user['role']; ?> </p>
                         </div>
+                       
                     </div>   
-                    <div class="buton">
-                        <button class="button is-medium is-link is-outline" data-toggle="modal" data-target="#exampleModal"><a class="bt" href="produits.php">Voir mes annonce</a></button>
-                        <button class="button is-medium is-link is-outline"><a class="bt" href="addproduits.php">Ajout votre annonce</a></button>
+                    <div class="admin">
                         <?php
-                            if ($user['role'] === 'ROLE_ADMIN') {
-                                echo '<a href="admin.php" class="btn btn-success my-2"> Accéder à l\'espace administrateur </a>';
-                            }
-                        ?>    
+                                if ($user['role'] === 'ROLE_ADMIN') {
+                                    echo '<a href="admin.php"class="button is-link"> Accéder à administrateur </a>';
+                                }
+                            ?>   
+                    </div>         
+                    <div class="buton">
+                        <button class="button is-medium is-link is-outline" data-toggle="modal" data-target="#exampleModal"><a class="bt" href="profilproduits.php">Voir mes annonce</a></button>
+                        <button class="button is-medium is-link is-outline"><a class="bt" href="addproduits.php">Ajout votre annonce</a></button>
+                         
                     </div>
             </div>    
 </section>

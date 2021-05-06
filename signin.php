@@ -1,4 +1,4 @@
-<?php require 'inc/header.php'; ?>
+<?php require 'inc/header.php'?>
 <?php 
     if(!empty($_POST['email_signup']) && !empty($_POST['username_signup']) && !empty($_POST['password1_signup']) && !empty($_POST['password2_signup']) && isset($_POST['submit_signup'])){
         $email = htmlspecialchars($_POST['email_signup']);
